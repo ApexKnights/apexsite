@@ -1,0 +1,473 @@
+.home {
+  padding: 0px 50px;
+  background-color: #1a1a1a;
+  @media (max-width: 768px) {
+    padding: 0px 20px;
+  }
+  .scroll-top,
+  .butt-ham {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(96, 96, 96, 0.23);
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.2px);
+    -webkit-backdrop-filter: blur(3.2px);
+    color: #fff;
+    z-index: 1;
+
+    .top-ico {
+      font-weight: 700;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .butt-ham {
+    left: 5%;
+    display: none;
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+  .hero {
+    padding-top: 50px;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    .circle1 {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background-color: #e96479;
+      opacity: 70%;
+      filter: blur(200px);
+    }
+    .circle2 {
+      position: absolute;
+      top: 50%;
+      right: 0%;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background-color: #7db9b6;
+      opacity: 70%;
+      z-index: 999;
+      filter: blur(200px);
+    }
+    .apex-img {
+      height: 400px;
+      margin-top: 30px;
+      @media (max-width: 375px) {
+        height: 200px;
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h4 {
+        color: white;
+        font-weight: 700;
+      }
+      h1 {
+        font-size: 90px;
+        font-weight: 700;
+        background: #6a6a6a;
+        background: radial-gradient(
+          circle farthest-corner at center center,
+          #6a6a6a 0%,
+          #eaeaea 100%
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media (max-width: 768px) {
+          text-align: center;
+          font-size: 80px;
+        }
+        @media (max-width: 500px) {
+          text-align: center;
+          font-size: 60px;
+        }
+        @media (max-width: 465px) {
+          text-align: center;
+          font-size: 50px;
+        }
+      }
+      h2 {
+        font-size: 60px;
+        background: #e96479;
+        background: linear-gradient(to right, #e96479 0%, #7db9b6 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media (max-width: 465px) {
+          text-align: center;
+          font-size: 40px;
+        }
+      }
+    }
+    .sidetext {
+      position: absolute;
+      left: 0%;
+      top: 30%;
+      z-index: 1;
+      padding: 16px 40px;
+      /* From https://css.glass */
+      background: rgba(96, 96, 96, 0.23);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.2px);
+      -webkit-backdrop-filter: blur(3.2px);
+      color: #fff;
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+    .sidetext2 {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      z-index: 1;
+      padding: 16px 40px;
+      /* From https://css.glass */
+      background: rgba(96, 96, 96, 0.23);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.2px);
+      -webkit-backdrop-filter: blur(3.2px);
+      color: #fff;
+      @media (max-width: 1165px) {
+        left: 4%;
+      }
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+    .sidetext-about {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      width: 300px;
+      right: 10%;
+      p {
+        font-size: 20px;
+        padding-bottom: 20px;
+      }
+      .button {
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-size: 18px;
+        text-align: center;
+        width: 120px;
+        font-weight: 700;
+        outline: none;
+        border: none;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        @media (max-width: 505px) {
+          width: auto;
+        }
+      }
+      @media (max-width: 1165px) {
+        right: 0%;
+      }
+      @media (max-width: 900px) {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        p {
+          text-align: center;
+        }
+      }
+    }
+    .service-texts {
+      width: 100%;
+      background: rgba(96, 96, 96, 0.23);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.2px);
+      -webkit-backdrop-filter: blur(3.2px);
+      border-radius: 15px;
+      padding: 15px 20px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 10px;
+      @media (max-width: 768px) {
+        border-radius: 0px;
+      }
+      span {
+        font-weight: 700;
+        font-size: 20px;
+        @media (max-width: 768px) {
+          text-align: center;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .about {
+    min-height: 90vh;
+    padding: 50px 0px;
+    .heading-about {
+      color: #fff;
+      font-size: 60px;
+      text-align: center;
+      @media (max-width: 475px) {
+        font-size: 45px;
+      }
+    }
+    .divider {
+      display: flex;
+      width: 100%;
+      min-height: 70vh;
+      align-items: center;
+      @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+        gap: 30px;
+      }
+      .left,
+      .right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 1024px) {
+          width: 100%;
+        }
+      }
+      .left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        .aboutdata {
+          color: #fff;
+          h1 {
+            margin-bottom: 20px;
+            font-size: 40px;
+            @media (max-width: 375px) {
+              font-size: 25px;
+            }
+          }
+          p {
+            font-size: 19px;
+            width: 80%;
+            @media (max-width: 375px) {
+              font-size: 15px;
+            }
+          }
+          ul {
+            li {
+              margin-left: 20px;
+              font-size: 19px;
+              padding: 6px 0px;
+              @media (max-width: 375px) {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        min-height: 100%;
+        img {
+          min-height: 20vh;
+          width: 70%;
+        }
+      }
+    }
+  }
+  .service {
+    min-height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0px;
+    .circle1 {
+      position: absolute;
+      top: 30%;
+      left: 0%;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background-color: #e96479;
+      opacity: 70%;
+      filter: blur(100px);
+    }
+    .circle2 {
+      position: absolute;
+      top: 30%;
+      right: 0%;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background-color: #7db9b6;
+      opacity: 70%;
+      filter: blur(100px);
+    }
+    .apex-servicehead {
+      text-align: center;
+      font-size: 40px;
+      color: #fff;
+      @media (max-width: 475px) {
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+    .servicecards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .butt {
+      .button {
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: 700;
+        outline: none;
+        border: none;
+        border-radius: 16px;
+        text-decoration: none;
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+
+  .experience {
+    min-height: 70vh;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    .exp-head {
+      color: #fff;
+      font-size: 40px;
+      @media (max-width: 425px) {
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+    .slidercards {
+      width: 80%;
+      @media (max-width: 425px) {
+        width: 95%;
+      }
+    }
+  }
+
+  .contact {
+    min-height: 80vh;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    .contact-head {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .divider {
+      display: flex;
+      width: 100%;
+      min-height: 70vh;
+      align-items: center;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+      }
+      .left,
+      .right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      .right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        form {
+          background: rgba(255, 255, 255, 0.11);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(7px);
+          -webkit-backdrop-filter: blur(7px);
+          border: 1px solid rgba(255, 255, 255, 0.27);
+          min-height: 60vh;
+          width: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 20px;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+          h2 {
+            font-size: 30px;
+            color: #fff;
+            @media (max-width: 425px) {
+              text-align: center;
+            }
+          }
+          input,
+          textarea {
+            width: 70%;
+            padding: 10px;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+          }
+        }
+        button {
+          padding: 10px 20px;
+          outline: none;
+          border: none;
+          font-weight: 700;
+          background-color: #fff;
+          border-radius: 18px;
+        }
+      }
+      .left {
+        min-height: 100%;
+        img {
+          min-height: 20vh;
+          width: 70%;
+        }
+      }
+    }
+  }
+}

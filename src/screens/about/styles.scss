@@ -1,0 +1,124 @@
+.about {
+  background-color: #1a1a1a;
+  min-height: 80vh;
+  padding: 50px;
+  @media (max-width: 768px) {
+    padding: 50px 20px;
+  }
+  .about-sec {
+    min-height: 90vh;
+    padding: 50px 0px;
+    .heading-about {
+      color: #fff;
+      font-size: 60px;
+      text-align: center;
+      @media (max-width: 475px) {
+        font-size: 45px;
+      }
+    }
+    .divider {
+      display: flex;
+      width: 100%;
+      min-height: 70vh;
+      align-items: center;
+      @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+        gap: 30px;
+      }
+      .left,
+      .right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 1024px) {
+          width: 100%;
+        }
+      }
+      .left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        .aboutdata {
+          color: #fff;
+          h1 {
+            margin-bottom: 20px;
+            font-size: 60px;
+            @media (max-width: 375px) {
+              font-size: 25px;
+            }
+          }
+          p {
+            font-size: 19px;
+            width: 80%;
+            @media (max-width: 375px) {
+              font-size: 15px;
+            }
+          }
+          ul {
+            li {
+              margin-left: 20px;
+              font-size: 19px;
+              padding: 6px 0px;
+              @media (max-width: 375px) {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        min-height: 100%;
+        img {
+          min-height: 20vh;
+          width: 70%;
+        }
+      }
+    }
+  }
+  .more-about {
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    @media (max-width: 520px) {
+      flex-direction: column;
+    }
+    .line {
+      height: 100vh;
+      width: 1.5px;
+      background-color: #fff;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+    .aboutcard-left,
+    .aboutcard-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 60vh;
+      gap: 30px;
+      width: 35%;
+      @media (max-width: 768px) {
+        width: 95%;
+      }
+    }
+    .sidetext1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .hifen {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

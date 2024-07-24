@@ -1,0 +1,95 @@
+.services {
+  min-height: 100vh;
+  padding: 0px 50px;
+  background-color: #1a1a1a;
+  @media (max-width: 500px) {
+    padding: 0px 20px;
+  }
+  .circle1 {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #e96479;
+    opacity: 70%;
+    filter: blur(200px);
+  }
+  .circle2 {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #7db9b6;
+    opacity: 70%;
+    z-index: 999;
+    filter: blur(200px);
+  }
+  .sec1 {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      .apex-img {
+        height: 400px;
+        @media (max-width: 500px) {
+          height: 200px;
+        }
+      }
+      h1 {
+        font-size: 90px;
+        font-weight: 700;
+        background: #6a6a6a;
+        background: radial-gradient(
+          circle farthest-corner at center center,
+          #6a6a6a 0%,
+          #eaeaea 100%
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media (max-width: 768px) {
+          text-align: center;
+          font-size: 80px;
+        }
+        @media (max-width: 500px) {
+          text-align: center;
+          font-size: 60px;
+        }
+        @media (max-width: 465px) {
+          text-align: center;
+          font-size: 40px;
+        }
+      }
+      h4 {
+        color: #fff;
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+        @media (max-width: 465px) {
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .servicecards {
+    min-height: 50vh;
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+}
