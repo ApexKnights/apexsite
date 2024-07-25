@@ -99,7 +99,7 @@ const Home = () => {
                     <p>
                         Apex Nights brings you innovative tech solutions for your business, we provide all It services
                     </p>
-                    <Link className='button'>
+                    <Link to={"/contact"} className='button'>
                         Lets's Talk
                     </Link>
                 </div>
